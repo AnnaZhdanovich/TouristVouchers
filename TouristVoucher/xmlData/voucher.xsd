@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/vouchers"
+	xmlns:tns="http://www.example.org/vouchers" elementFormDefault="qualified">
+
+	<element name="voucher" type="tns:VoucherType" abstract="true"></element>
+	<element name="excoursionVoucher" type="tns:ExcoursionVoucher" substitutionGroup="tns:voucher"></element>
+	<element name="recreation" type="tns:Recreation" substitutionGroup="tns:voucher"></element>
+
+	<element name="touristVouchers">
+		<complexType>
+			<sequence>
+				<element ref="tns:voucher" minOccurs="2" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="VoucherType">
+		<sequence>
+			<element name="client" type="tns:Client" />
+			<element name="country" type="string" />
+			<element name="amountOfDay" type="integer" />
+			<element name="amountOfNight" type="integer" />
+			<element name="transport" type="tns:Transport" />
+			<element name="hotel" type="tns:Hotel" />
+			<element name="cost" type="tns:Cost" />
+		</sequence>
+	</complexType>
+	
+	<complexType name="Client">
+		<sequence>
+			<element name="name" type="string" />
+		</sequence>
+		<attribute name="numberOfPasport" use="required">
+			<simpleType>
+				<restriction base="ID">
+					<pattern value="([A-Z]{2}[0-9]{5})" />
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	
+	<simpleType name="Transport">
+		<restriction base="string">
+			<enumeration value="avia"></enumeration>
+			<enumeration value="railway"></enumeration>
+			<enumeration value="auto"></enumeration>
+			<enumeration value="ship"></enumeration>
+		</restriction>
+	</simpleType>
+	
+	<complexType name="Hotel">
+		<sequence>
+			<element name="nameOfHotel" type="string" />
+			<element name="food" type="tns:Food" />
+			<element name="typeRoom" type="tns:TypeRoom" />
+		</sequence>
+		<attribute name="amountOfStars" use="optional">
+			<simpleType>
+				<restriction base="integer">
+					<minInclusive value="1" />
+					<maxInclusive value="5" />
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	
+	<complexType name="Food">
+		<sequence>
+			<element name="isFood" type="boolean" />
+		</sequence>
+		<attribute name="typeFood" use="optional">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="HB"></enumeration>
+					<enumeration value="BB"></enumeration>
+					<enumeration value="Al"></enumeration>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	
+	<simpleType name="TypeRoom">
+		<restriction base="string">
+			<enumeration value="Single"></enumeration>
+			<enumeration value="Double"></enumeration>
+			<enumeration value="Triple"></enumeration>
+		</restriction>
+	</simpleType>
+	
+	<complexType name="Cost">
+		<sequence>
+			<element name="wholCost" type="integer" />
+		</sequence>
+		<attribute name="typeMoney" use="required">		
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="euro" />
+					<enumeration value="usd" />
+					<enumeration value="rub" />
+				</restriction>
+			</simpleType>
+		</attribute>		
+	</complexType>
+	
+	<complexType name="ExcoursionVoucher">
+		<complexContent>
+			<extension base="tns:VoucherType">
+				<sequence>
+					<element name="amountOfExcoursion" type="integer" />
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="Recreation">
+		<complexContent>
+			<extension base="tns:VoucherType">
+				<attribute name="typeOfRest" use="optional" default="indefined">
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="beach"></enumeration>
+							<enumeration value="ski"></enumeration>
+							<enumeration value="exotic"></enumeration>
+							<enumeration value="healing"></enumeration>
+							<enumeration value="indefined"></enumeration>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</extension>
+		</complexContent>
+	</complexType>
+</schema>

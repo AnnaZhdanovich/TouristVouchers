@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<touristVouchers xmlns="http://www.example.org/vouchers"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/vouchers voucher.xsd ">
+	<excoursionVoucher>
+		<client numberOfPasport="MS56748">
+			<name>IVANOV</name>
+		</client>
+		<country>EGIPT</country>
+		<amountOfDay>4</amountOfDay>
+		<amountOfNight>5</amountOfNight>
+		<transport>avia</transport>
+		<hotel amountOfStars="2">
+			<nameOfHotel>"STAR PLUS"</nameOfHotel>
+			<food typeFood="HB">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Single</typeRoom>
+		</hotel>
+		<cost typeMoney="euro">
+			<wholCost>2376</wholCost>
+		</cost>
+		<amountOfExcoursion>3</amountOfExcoursion>
+	</excoursionVoucher>
+
+	<recreation typeOfRest="exotic">
+		<client numberOfPasport="MC56748">
+			<name>PETROV</name>
+		</client>
+		<country>DOMINICANA</country>
+		<amountOfDay>8</amountOfDay>
+		<amountOfNight>7</amountOfNight>
+		<transport>avia</transport>
+		<hotel amountOfStars="4">
+			<nameOfHotel> "HILTON"</nameOfHotel>
+			<food typeFood="HB">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Double</typeRoom>
+		</hotel>
+		<cost typeMoney="rub">
+			<wholCost>2500</wholCost>
+		</cost>
+	</recreation>
+
+	<excoursionVoucher>
+		<client numberOfPasport="MV56748">
+			<name>NOVICOV</name>
+		</client>
+		<country>THAILAND</country>
+		<amountOfDay>3</amountOfDay>
+		<amountOfNight>4</amountOfNight>
+		<transport>avia</transport>
+		<hotel amountOfStars="3">
+			<nameOfHotel>"D3"</nameOfHotel>
+			<food>
+				<isFood>false</isFood>
+			</food>
+			<typeRoom>Single</typeRoom>
+		</hotel>
+		<cost typeMoney="euro">
+			<wholCost>1800</wholCost>
+		</cost>
+		<amountOfExcoursion>4</amountOfExcoursion>
+	</excoursionVoucher>
+
+	<recreation typeOfRest="beach">
+		<client numberOfPasport="MD99748">
+			<name>SIDOROV</name>
+		</client>
+		<country>ITALY</country>
+		<amountOfDay>8</amountOfDay>
+		<amountOfNight>7</amountOfNight>
+		<transport>avia</transport>
+		<hotel amountOfStars="4">
+			<nameOfHotel> "WERSACHE"</nameOfHotel>
+			<food typeFood="BB">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Triple</typeRoom>
+		</hotel>
+		<cost typeMoney="rub">
+			<wholCost>3000</wholCost>
+		</cost>
+	</recreation>
+
+	<excoursionVoucher>
+		<client numberOfPasport="MK56748">
+			<name>KRUGLOV</name>
+		</client>
+		<country>FRANCE</country>
+		<amountOfDay>2</amountOfDay>
+		<amountOfNight>2</amountOfNight>
+		<transport>railway</transport>
+		<hotel amountOfStars="4">
+			<nameOfHotel>"MARRITY"</nameOfHotel>
+			<food typeFood="Al">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Double</typeRoom>
+		</hotel>
+		<cost typeMoney="euro">
+			<wholCost>1500</wholCost>
+		</cost>
+		<amountOfExcoursion>2</amountOfExcoursion>
+	</excoursionVoucher>
+
+	<recreation typeOfRest="ski">
+		<client numberOfPasport="MD56748">
+			<name>DEMOV</name>
+		</client>
+		<country>NORWAY</country>
+		<amountOfDay>8</amountOfDay>
+		<amountOfNight>7</amountOfNight>
+		<transport>auto</transport>
+		<hotel amountOfStars="4">
+			<nameOfHotel> "STAR-BB"</nameOfHotel>
+			<food typeFood="Al">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Single</typeRoom>
+		</hotel>
+		<cost typeMoney="usd">
+			<wholCost>800</wholCost>
+		</cost>
+	</recreation>
+
+	<excoursionVoucher>
+		<client numberOfPasport="MS66648">
+			<name>IVASHKIN</name>
+		</client>
+		<country>ROMANIA</country>
+		<amountOfDay>2</amountOfDay>
+		<amountOfNight>2</amountOfNight>
+		<transport>auto</transport>
+		<hotel amountOfStars="2">
+			<nameOfHotel>"ROMANIA HOTEL"</nameOfHotel>
+			<food typeFood="HB">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Single</typeRoom>
+		</hotel>
+		<cost typeMoney="euro">
+			<wholCost>1300</wholCost>
+		</cost>
+		<amountOfExcoursion>4</amountOfExcoursion>
+	</excoursionVoucher>
+
+	<recreation typeOfRest="beach">
+		<client numberOfPasport="LC11111">
+			<name>KULICOV</name>
+		</client>
+		<country>SPAIN</country>
+		<amountOfDay>10</amountOfDay>
+		<amountOfNight>9</amountOfNight>
+		<transport>avia</transport>
+		<hotel amountOfStars="5">
+			<nameOfHotel> "MARE-LA-SOLE"</nameOfHotel>
+			<food typeFood="Al">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Triple</typeRoom>
+		</hotel>
+		<cost typeMoney="rub">
+			<wholCost>4000</wholCost>
+		</cost>
+	</recreation>
+
+
+	<excoursionVoucher>
+		<client numberOfPasport="SK22345">
+			<name>LAPTEV</name>
+		</client>
+		<country>PORTUGAL</country>
+		<amountOfDay>3</amountOfDay>
+		<amountOfNight>4</amountOfNight>
+		<transport>railway</transport>
+		<hotel amountOfStars="3">
+			<nameOfHotel>"HOTEL++"</nameOfHotel>
+			<food typeFood="HB">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Single</typeRoom>
+		</hotel>
+		<cost typeMoney="euro">
+			<wholCost>800</wholCost>
+		</cost>
+		<amountOfExcoursion>4</amountOfExcoursion>
+	</excoursionVoucher>
+
+	<recreation>
+		<client numberOfPasport="KK56789">
+			<name>VIKTOROV</name>
+		</client>
+		<country>UKRAINE</country>
+		<amountOfDay>20</amountOfDay>
+		<amountOfNight>19</amountOfNight>
+		<transport>railway</transport>
+		<hotel amountOfStars="2">
+			<nameOfHotel> "RODNIK"</nameOfHotel>
+			<food typeFood="BB">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Single</typeRoom>
+		</hotel>
+		<cost typeMoney="usd">
+			<wholCost>500</wholCost>
+		</cost>
+	</recreation>
+
+	<excoursionVoucher>
+		<client numberOfPasport="MC12648">
+			<name>BARANOV</name>
+		</client>
+		<country>RUSSIA</country>
+		<amountOfDay>5</amountOfDay>
+		<amountOfNight>5</amountOfNight>
+		<transport>auto</transport>
+		<hotel amountOfStars="3">
+			<nameOfHotel>"ROMANIA HOTEL"</nameOfHotel>
+			<food typeFood="BB">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Double</typeRoom>
+		</hotel>
+		<cost typeMoney="euro">
+			<wholCost>5000</wholCost>
+		</cost>
+		<amountOfExcoursion>4</amountOfExcoursion>
+	</excoursionVoucher>
+
+	<recreation typeOfRest="beach">
+		<client numberOfPasport="CH56789">
+			<name>YHANCHENKO</name>
+		</client>
+		<country>USA</country>
+		<amountOfDay>10</amountOfDay>
+		<amountOfNight>9</amountOfNight>
+		<transport>ship</transport>
+		<hotel amountOfStars="4">
+			<nameOfHotel> "MARE-LA-SOLE"</nameOfHotel>
+			<food typeFood="Al">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Triple</typeRoom>
+		</hotel>
+		<cost typeMoney="rub">
+			<wholCost>4000</wholCost>
+		</cost>
+	</recreation>
+
+	<excoursionVoucher>
+		<client numberOfPasport="MP67800">
+			<name>TCVIRKO</name>
+		</client>
+		<country>GERMANY</country>
+		<amountOfDay>5</amountOfDay>
+		<amountOfNight>6</amountOfNight>
+		<transport>auto</transport>
+		<hotel amountOfStars="2">
+			<nameOfHotel>"BERLIN HOTEL"</nameOfHotel>
+			<food typeFood="HB">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Double</typeRoom>
+		</hotel>
+		<cost typeMoney="euro">
+			<wholCost>1300</wholCost>
+		</cost>
+		<amountOfExcoursion>4</amountOfExcoursion>
+	</excoursionVoucher>
+
+	<recreation typeOfRest="healing">
+		<client numberOfPasport="MP00034">
+			<name>GICHEV</name>
+		</client>
+		<country>ISRAEL</country>
+		<amountOfDay>10</amountOfDay>
+		<amountOfNight>9</amountOfNight>
+		<transport>avia</transport>
+		<hotel amountOfStars="4">
+			<nameOfHotel> "SOLE"</nameOfHotel>
+			<food typeFood="HB">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Single</typeRoom>
+		</hotel>
+		<cost typeMoney="euro">
+			<wholCost>4000</wholCost>
+		</cost>
+	</recreation>
+
+	<excoursionVoucher>
+		<client numberOfPasport="MC55648">
+			<name>MAINICH</name>
+		</client>
+		<country>UKRAINE</country>
+		<amountOfDay>10</amountOfDay>
+		<amountOfNight>9</amountOfNight>
+		<transport>auto</transport>
+		<hotel amountOfStars="3">
+			<nameOfHotel>"UK HOTEL"</nameOfHotel>
+			<food typeFood="HB">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Single</typeRoom>
+		</hotel>
+		<cost typeMoney="euro">
+			<wholCost>300</wholCost>
+		</cost>
+		<amountOfExcoursion>5</amountOfExcoursion>
+	</excoursionVoucher>
+
+	<recreation typeOfRest="ski">
+		<client numberOfPasport="MC45679">
+			<name>KARPOV</name>
+		</client>
+		<country>UKRAINE</country>
+		<amountOfDay>15</amountOfDay>
+		<amountOfNight>14</amountOfNight>
+		<transport>avia</transport>
+		<hotel amountOfStars="4">
+			<nameOfHotel> "DB3"</nameOfHotel>
+			<food typeFood="Al">
+				<isFood>true</isFood>
+			</food>
+			<typeRoom>Triple</typeRoom>
+		</hotel>
+		<cost typeMoney="euro">
+			<wholCost>1000</wholCost>
+		</cost>
+	</recreation>
+
+
+</touristVouchers>
